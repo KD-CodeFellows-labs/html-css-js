@@ -1,0 +1,44 @@
+/* * {
+    border: 1px solid black;
+} */
+
+.menu {
+    list-style: none;
+    width: 100px;
+    display: inline-block;
+}
+
+body {
+    width: 960px;
+    margin: 0px auto;
+    background-color: lightblue;
+}
+
+header {
+    height: 150px;
+}
+
+#main-header {
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+header nav {
+    color: blue;
+    width: 50%;
+}
+
+/* This area below styles the body>main */
+
+.balls {
+    list-style: none;
+    width: 33%;
+    display: inline-block;
+    border: 1px;
+    border-block-color: black;
+}
+
+#shelf {
+    background-color: white;
+}
