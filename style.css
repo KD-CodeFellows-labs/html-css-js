@@ -29,6 +29,11 @@ header nav {
     width: 50%;
 }
 
+.fun {
+    list-style: none;
+    display: inline-block;
+}
+
 /* This area below styles the body>main */
 
 .balls {
