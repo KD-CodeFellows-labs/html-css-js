@@ -1,20 +1,20 @@
 function addName() {
     var userName = prompt('Hi, What is your name?');
     if ((userName == null) ) {userName = 'Visitor';}
-    return '<div class="fun">' + 'Hi ' + userName + ', ' + '</div>'
+    return '<h3 class="fun">' + 'Hi ' + userName + ', ' + '</h3>'
 }
 
 function askQuestion() {
-    var answer = prompt('Do you like Soccer? yes/no');
+    var answer = confirm('Are you a Ball Hog?');
     var message;
-    if (answer === 'yes') {
-        message = ' I love that! soccer is awesome!';
-    } else if (answer === 'no') {
-        message = ' ok fine... ';
+    if (answer === true) {
+        message = ' Great, you are a Ball Hogs also, soccer is awesome!';
+    } else if (answer === false) {
+        message = " Well ok, you're not a Ball Hog, nobody is perfect!";
     } else {
-        message = ' soccer is cool!';
+        message = ' Soccer is cool!';
     }
-    return '<div class="fun">' + message + '</div>';
+    return '<h3 class="fun">' + message + '</h3>';
 }
 
 function greetUser() {
@@ -31,5 +31,5 @@ function greetUser() {
     } else {
         greeting = 'Welcome!';
     }
-    return '<div class="fun">' + greeting + '</div>';
+    return '<h3 class="fun">' + greeting + '</h3>';
 }
