@@ -25,6 +25,7 @@ header {
 }
 
 header nav {
+    background-color: beige;
     color: darkblue;
     width: 100%;
 }
@@ -38,17 +39,24 @@ header nav {
 
 .balls {
     list-style: none;
-    width: 33%;
+    width: 30%;
     display: inline-block;
     border: 1px;
     border-block-color: black;
+    padding: 1px
 }
 
 #shelf {
     background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 /* This area below styles footer  */
+footer {
+    background-color: beige;
+}
 
 footer nav ul {
     list-style: none;
