@@ -3,6 +3,14 @@ var today = new Date();
 var hourNow = today.getHours();
 var greeting;
 
+while(answer === ''){
+    answer = prompt("do you like dogs yes/no");
+}
+
+while (answer !== 'yes' && answer !== 'no') {
+    answer = prompt("do you like dogs, please answer yes or no");
+}
+
 if (hourNow > 18) {
     greeting = 'Good evening!';
 } else if (hourNow > 12) {
