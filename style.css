@@ -19,9 +19,9 @@ header {
 }
 
 #main-header {
-    width: 50%;
+    width: 100%;
     text-align: center;
-    margin: 0px auto;
+    margin: 5px auto;
 }
 
 header nav {
