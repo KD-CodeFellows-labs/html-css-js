@@ -1,6 +1,6 @@
 function addName() {
     var userName = prompt('Hi, What is your name?');
-    if ((userName == null) ) {userName = 'Visitor';}
+    if ((userName == null) || (userName == '') ) {userName = 'Visitor';}
     return '<h3 class="fun">' + 'Hi ' + userName + ', ' + '</h3>'
 }
 
@@ -33,3 +33,43 @@ function greetUser() {
     }
     return '<h3 class="fun">' + greeting + '</h3>';
 }
+
+function howMany(){
+    var count = prompt('How many balls do you want to order?');
+    while(count === '' || isNaN(count)){
+      count = prompt('Please enter a number.  How many do you want to order?');
+    }
+    return Number(count);
+  }
+
+  function getItem(){
+    var order = '';
+    var item;
+  
+    while(order === ''){
+      order = prompt('What size ball would you like to order, 4 or 6?');
+    }
+    
+    if (order === '4'){
+      item = ' size' + order + ' <img class="size4"';
+    } else if (order === '6'){
+      item = ' size' + order + ' <img class="size6"';
+    } 
+    else {
+      item = '<strong>No items ordered</strong>';
+    }
+    return item;
+   
+  }
+
+function showOrder(){
+    var item = getItem();
+    var total = howMany();
+    var result = '';
+  
+    for(var i = 0; i < total; i++){
+      var realCount = i + 1;
+      result = result + '<div class="loop">' + ' Ball#' + realCount + item + ' src="images/ball.png" ' + '</div>'
+    }
+    return result;
+  }

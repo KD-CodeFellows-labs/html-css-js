@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    height: 150px;
+    height: 200px;
 }
 
 #main-header {
@@ -25,14 +25,28 @@ header {
 }
 
 header nav {
-    background-color: beige;
+    background-color: rosybrown;
     color: darkblue;
     width: 100%;
+    text-align: end;
 }
 
 .fun {
     list-style: none;
     display: inline-block;
+}
+
+.loop {
+    color: brown;
+    display: inline;
+    width: 50px;
+}
+
+.size4 {
+    width: 25px;
+}
+.size6 {
+    width: 35px;
 }
 
 /* This area below styles the body>main */
@@ -54,6 +68,7 @@ header nav {
 }
 
 /* This area below styles footer  */
+
 footer {
     background-color: beige;
 }
