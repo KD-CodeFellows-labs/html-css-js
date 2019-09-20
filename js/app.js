@@ -1,7 +1,7 @@
 function addName() {
     var userName = prompt('Hi, What is your name?');
     if ((userName == null) || (userName == '') ) {userName = 'Visitor';}
-    return '<h3 class="fun">' + 'Hi ' + userName + ', ' + '</h3>'
+    return '<h3 class="fun">' + 'Hi ' + userName + ', ' + '</h3>';
 }
 
 function askQuestion() {
@@ -40,9 +40,9 @@ function howMany(){
       count = prompt('Please enter a number.  How many do you want to order?');
     }
     return Number(count);
-  }
+}
 
-  function getItem(){
+function getItem(){
     var order = '';
     var item;
   
@@ -58,9 +58,8 @@ function howMany(){
     else {
       item = '<strong>No items ordered</strong>';
     }
-    return item;
-   
-  }
+    return item;   
+}
 
 function showOrder(){
     var item = getItem();
@@ -72,4 +71,4 @@ function showOrder(){
       result = result + '<div class="loop">' + ' Ball#' + realCount + item + ' src="images/ball.png" ' + '</div>'
     }
     return result;
-  }
+}
