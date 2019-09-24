@@ -15,13 +15,16 @@ body {
 }
 
 header {
-    height: 200px;
+    /* height: 200px; */
+    background-color: lightskyblue;
 }
 
 #main-header {
     width: 100%;
     text-align: center;
     margin: 5px auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkslategray;
 }
 
 header nav {
@@ -42,6 +45,7 @@ header img {
 
 .loop {
     color: brown;
+    text-align: center;
     display: inline;
     width: 50px;
 }
